@@ -47,6 +47,7 @@ python3 -m venv $PYTHON_MODULES_INSTALLROOT
 . $PYTHON_MODULES_INSTALLROOT/bin/activate
 
 # Install setuptools upfront, since this seems to create issues now...
+python3 -m pip install -IU pip
 python3 -m pip install -IU setuptools==49.6.0
 python3 -m pip install -IU wheel
 
@@ -55,6 +56,8 @@ python3 -m pip install -IU wheel
 # See also:
 #   https://github.com/scikit-garden/scikit-garden/issues/23
 python3 -m pip install -IU numpy
+python3 -m pip install -IU scipy
+python3 -m pip install -IU pandas
 python3 -m pip install -IU -r requirements.txt
 
 # Major.minor version of Python

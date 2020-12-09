@@ -49,7 +49,7 @@ env:
     xgboost==0.82
     dryable==1.0.3
     responses==0.10.6
-    pandas==1.0.5
+    pandas==1.1.5
 ---
 # Modulefile
 MODULEDIR="$INSTALLROOT/etc/modulefiles"
